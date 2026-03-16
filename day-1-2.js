@@ -1,4 +1,15 @@
-/********* variables let-const */
+/** JavaScript (JS) is a powerful programming language that makes websites interactive and dynamic. 
+ It runs in the browser and allows developers to control 
+ web page behavior, update content instantly, handle user actions, and build modern web applications. */
+
+/** JavaScript is a single-threaded programming language, 
+ which means it can execute only one task at a time using a single call stack.
+
+ * However, with the help of the Event Loop, Web APIs, and Callback Queue, 
+ JavaScript can handle asynchronous operations (like API calls, timers, and events) 
+ without blocking the main thread. */
+
+/********* variables let - const */
 
 const name = "Aman";
 let age = 21;
@@ -168,7 +179,7 @@ const devv = {
     experience: 2,
 };
 
-// console.log(`${developer.name} has ${developer.experience} years experience`);
+console.log(`${developer.name} has ${developer.experience} years experience`);
 
 // better version
 const developer = {
@@ -178,6 +189,8 @@ const developer = {
 };
 const {namess, experiencess} = developer;
 console.log(`${namess} has ${experiencess} years experience`);
+
+
 /** #2 Merge arrays:
  * frontend = ["HTML","CSS"]
  * backend = ["Node","Express"]

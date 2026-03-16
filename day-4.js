@@ -109,7 +109,64 @@ console.log(getNumber());
 
 
 
-// ################ ****************** RESUME ALL AGAIN TOMMARROW ****************** ################
+/** ################ ****************** RESUME ALL AGAIN TOMMARROW ****************** ################ */
+
+// ### For better understanding ###
+
+console.log("Start");
+
+setTimeout(() => {
+    console.log("Hello Aman..!");
+}, 2000); // 2 seconds
+
+console.log("End");
+
+/** *** Promise: A promise represents a value that will come later.
+It has three states:
+pending, fulfilled, rejected
+*/
+
+// example
+
+const getUsr = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout( () => {
+            resolve({
+                name: "Aman",
+                age: 21,
+            });
+        }, 2000);
+    });
+}
+
+getUsr().then(user => {
+    console.log(user);
+});
+
+
+
+// in modern js instead of .then() we use async/await 
+
+const runn = async() => {
+    const user = await getUsr();
+    console.log(user);
+}
+
+runn();
+
+
+/** Real MERN Example */
+// const getusers = async (req, res) => {
+//     try {
+//         const users = await User.find();
+//         res.json(users);
+//     } catch(error) {
+//         res.status(500).json({message: "Server error"});
+//     }
+// } 
+
+
+
 
 
 

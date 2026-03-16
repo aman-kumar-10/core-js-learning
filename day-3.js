@@ -66,7 +66,7 @@ const adultsAges = ages.filter(age => age>=18);
 console.log(adultsAges);
 
 // #3. use reduce() to [200,150,300,50]; get total = 700.
-const prices = [200,150,300,50];;
+const prices = [200,150,300,50];
 const total = prices.reduce((ttl, crr) => ttl+crr, 0);
 console.log(total);
 
